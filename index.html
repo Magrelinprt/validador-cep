@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador de CEP</title>
+</head>
+<body>
+    <h1>Validador de CEP</h1>
+
+    <form id="formulario">
+        <label for="cep">CEP:</label>
+        <input 
+            type="text"
+            name="cep" 
+            id="cep" 
+            required 
+            maxlength="8" 
+            placeholder="Digite o CEP (somente os números)" 
+            autocomplete="postal-code">
+
+        <button type="submit">Procurar</button>
+        <div id="mensagem"></div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
